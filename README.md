@@ -51,14 +51,8 @@
 
 ---
 
-## 🎨 Screenshots (Optional)
-*Include screenshots or GIFs here to showcase the application.*
-
----
-
 ## 🛠️ Built With
 - HTML, CSS, and JavaScript  
-- [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)  
 
 ---
 
