@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#00b4d8">
+    <link rel="manifest" href="manifest.json">
+    <title>Memefazo - Add Text Behind Objects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ad-sidebar ad-left">
+        <div class="ad-placeholder">Sidebar Ad (Left)</div>
+    </div>
+
+    <div class="ad-sidebar ad-right">
+        <div class="ad-placeholder">Sidebar Ad (Right)</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-main">
+                <div class="logo-title">
+                    <div class="logo">
+                        <img src="assets/memefazo.png" alt="Memefazo Logo" class="logo-img">
+                    </div>
+                    <h1>Memefazo</h1>
+                </div>
+                <div class="divider"></div>
+                <p>you wish you were funny</p>
+            </div>
+        </header>
+
+        <!-- Ad space (top) -->
+        <div class="ad-container" id="top-ad">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+
+        <main>
+            <div class="upload-section" id="dropZone">
+                <input type="file" id="imageInput" accept="image/*" hidden>
+                <div class="upload-content">
+                    <svg class="upload-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16L12 8M12 8L15 11M12 8L9 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3 15V16C3 18.2091 4.79086 20 7 20H17C19.2091 20 21 18.2091 21 16V15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <button id="uploadBtn" class="primary-btn">Choose Image</button>
+                    <p class="support-text">or drop your image here</p>
+                    <p class="format-text">Supports: JPG, PNG (Max 5MB)</p>
+                </div>
+            </div>
+
+            <div class="editor-section" id="editorSection" style="display: none;">
+                <div class="canvas-container">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="controls">
+                    <input type="text" id="textInput" placeholder="Enter your text">
+                    <input type="color" id="colorPicker" value="#ffffff">
+                    <button id="processBtn" class="primary-btn">Process Image</button>
+                    <button id="downloadBtn" class="secondary-btn">Download</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Mid-content ad moved here -->
+        <div class="ad-container">
+            <div class="ad-placeholder">Mid-Content Ad</div>
+        </div>
+
+        <!-- Ad space (bottom) -->
+        <div class="ad-container" id="bottom-ad">
+            <div class="ad-placeholder">Advertisement</div>
+        </div>
+
+        <footer>
+            <p>© 2024 Memefazo. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
